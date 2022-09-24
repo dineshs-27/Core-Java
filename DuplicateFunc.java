@@ -6,7 +6,7 @@ public class DuplicateFunc {
     public static void main(String[] args) {
         DuplicateFunc Check = new DuplicateFunc();
         Check.Count();
-        //Check.Duplicate();
+        Check.Duplicate();
     }
 
     public void Count() {
