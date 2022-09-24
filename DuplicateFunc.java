@@ -29,15 +29,13 @@ public class DuplicateFunc {
         Scanner getInput = new Scanner(System.in);
         System.out.println("Enter the String : ");
         String S = getInput.nextLine();
-        int Sl = S.length();
-        int cnt = 0;
-        for (int i = 0, i1 = 1; i < Sl; i++,i1++) {
-                if (S.charAt(i) == S.charAt(i1)){
-                    System.out.println("Duplicate is Present");
-                    i++;
-                } else {
-                    System.out.println("Duplicate is Not Present");
+        String R = "";
+        for (int i = 0; i < S.length(); i++) {
+            char C = S.charAt(i);
+                if (R.indexOf(C) < 0){
+                   R = R + S.charAt(i);
                 }
         }
+        System.out.println(R);
     }
 }
