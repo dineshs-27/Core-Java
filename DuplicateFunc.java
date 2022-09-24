@@ -33,7 +33,7 @@ public class DuplicateFunc {
         for (int i = 0; i < S.length(); i++) {
             char C = S.charAt(i);
                 if (R.indexOf(C) < 0){
-                   R = R + S.charAt(i);
+                   R = R + C;
                 }
         }
         System.out.println(R);
