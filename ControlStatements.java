@@ -51,4 +51,15 @@ public class ControlStatements {
             System.out.println(i);
         }
     }
+    public void VoteCheck(){
+        Scanner getInput = new Scanner(System.in);
+        System.out.println("Enter Your Age : ");
+        int i = getInput.nextInt();
+        if (i>=18){
+            System.out.println("Your Eligible for Vote !");
+        }
+        else {
+            System.out.println("Your Not Eligible for Vote !");
+        }
+    }
 }
