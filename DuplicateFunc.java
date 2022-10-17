@@ -36,6 +36,6 @@ public class DuplicateFunc {
                    R = R + C;
                 }
         }
-        System.out.println(R);
+        System.out.println("Modified String : " + R);
     }
 }
