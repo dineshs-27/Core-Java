@@ -5,19 +5,23 @@ import java.util.Scanner;
 public class Fibonacci {
     public static void main(String[] args) {
         Fibonacci obj = new Fibonacci();
-        obj.Result();
+        obj.forlplpResult();
         obj.palindrome();
     }
 
-    public void Result() {
+     public void forlplpResult() {
         Scanner getInput = new Scanner(System.in);
-        System.out.println("Enter a Number : ");
-        int a = getInput.nextInt();
-        int R = 1;
-        for (int i = 1; i <= a; i++) {
-            R = R * i;
+        System.out.println("Enter the Repeat times : ");
+        int k = getInput.nextInt();
+        for (int j = 1; j <= k; j++) {
+            System.out.println("Enter a Number : ");
+            int a = getInput.nextInt();
+            int R = 1;
+            for (int i = 1; i <= a; i++) {
+                R = R * i;
+            }
+            System.out.println("Factorial : " + R);
         }
-        System.out.println("Factorial : " + R);
     }
 
     public void palindrome() {
