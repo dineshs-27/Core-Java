@@ -16,9 +16,11 @@ public class ArrList {
         lst3.add("Dinesh");
         lst3.add('S');
         System.out.println("List 1 = "+ lst1);
+        System.out.println(lst1.get(1));
+        lst1.remove(1);
+        System.out.println("List 1 Modified : " + lst1);
         System.out.println("List 2 = "+ lst2);
         System.out.println("List 3 = "+ lst3);
-        System.out.println(lst1.get(1));
         System.out.println(lst2.contains(7));
     }
 }
