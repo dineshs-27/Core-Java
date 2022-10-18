@@ -14,6 +14,8 @@ public class LnkdList {
         lst2.add("Rohit");
         lst2.add("Jadeja");
         System.out.println("List 1 = "+ lst1);
+        lst1.remove(1);
+        System.out.println("List 1 Modified : " + lst1);
         System.out.println("List 2 = "+ lst2);
         System.out.println(lst1.contains(7));
         System.out.println(lst2.get(0));
