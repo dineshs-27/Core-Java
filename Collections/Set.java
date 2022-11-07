@@ -13,11 +13,12 @@ public class Set {
         obj1.add(1);
         obj1.add(3);
         obj2.add(10);
-        obj1.addAll(obj2);
-            System.out.println(obj1);
-            System.out.println(obj1.clone());
-            System.out.println(Arrays.toString(obj1.toArray()));
-            System.out.println(obj1.contains(7));
-            System.out.println(obj1);
+        System.out.println("Set 1 : " + st1);
+        System.out.println("Set 2 : " + st2);
+        st1.addAll(st2);
+        System.out.println("Add of Set 1&2 : " + st1);
+        System.out.println(st1.clone());
+        System.out.println(Arrays.toString(st1.toArray()));
+        System.out.println(st1.contains(7));
         }
     }
