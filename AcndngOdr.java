@@ -1,16 +1,24 @@
 package Learn;
 
-public class AcndngOdr {
-    public static void main(String[] args){
-        int arr[] = new int[] {5,4,3,2,1};
-        int temp;
-        System.out.println("Elements of Original array : ");
-        for(int x=0; x<arr.length; x++){
-            System.out.print(arr[x] + " ");
+import java.util.Arrays;
+
+import java.util.Scanner;
+
+public class AcndgOdr {
+    public static void main(String[] args) {
+        Scanner getInput = new Scanner(System.in);
+        System.out.println("Enter number of elements in array : ");
+        int x = getInput.nextInt();
+        int[] arr = new int[x];
+        System.out.println("Enter elements of array : ");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = getInput.nextInt();
         }
-        for(int i=0; i<arr.length; i++) {
-            for (int j=i+1; j<arr.length; j++) {
-                if (arr[i]>arr[j]) {
+        System.out.println("Elements of Original array : " + Arrays.toString(arr));
+        int temp;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
@@ -18,9 +26,6 @@ public class AcndngOdr {
             }
         }
         System.out.println();
-        System.out.println("Elements of Ascending array : ");
-        for(int j=0; j<arr.length; j++){
-            System.out.print(arr[j] + " ");
-        }
+        System.out.println("Elements of ascending array : " + Arrays.toString(arr));
     }
 }
