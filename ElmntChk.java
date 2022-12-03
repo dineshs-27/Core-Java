@@ -1,5 +1,9 @@
 package Learn;
 
+import java.util.Scanner;
+
+// Checking larger and smaller element !
+
 public class ElmntChk {
     public static void main(String[] args) {
         ElmntChk obj = new ElmntChk();
@@ -7,22 +11,34 @@ public class ElmntChk {
         obj.Sml();
     }
     public void Lrg(){
-    int num[] = {100,1070,876,573,233,546,35};
+        Scanner getInput = new Scanner(System.in);
+        System.out.println("Enter the number of elements : ");
+        int[] num = new int[getInput.nextInt()];
+        System.out.println("Enter the array elements : ");
+        for(int i=0; i<num.length; i++){
+            num[i] = getInput.nextInt();
+        }
         int x = num[0];
-        for(int i=1; i<num.length; i++){
-            if(x<num[i]){
-                x = num[i];
+        for(int j=1; j<num.length; j++){
+            if(x<num[j]){
+                x = num[j];
             }
         }
         System.out.println("Largest Number : " + x);
     }
 
     public void Sml(){
-        int num[] ={26,3,27,16,2};
+        Scanner getInput = new Scanner(System.in);
+        System.out.println("Enter the number of elements : ");
+        int[] num = new int[getInput.nextInt()];
+        System.out.println("Enter the array elements : ");
+        for(int i=0; i<num.length; i++){
+            num[i] = getInput.nextInt();
+        }
         int x = num[0];
-        for(int i=1; i<num.length; i++){
-            if(x>num[i]){
-                x = num[i];
+        for(int j=1; j<num.length; j++){
+            if(x>num[j]){
+                x = num[j];
             }
         }
         System.out.println("Smallest Number : " + x);
